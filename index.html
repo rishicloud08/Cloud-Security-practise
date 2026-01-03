@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Frontend App</title>
+
+    <!-- CSS inside same file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 60px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0078ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #005fcc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Frontend Demo</h1>
+    <p id="message">Click the button</p>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <!-- JavaScript inside same file -->
+    <script>
+        function showMessage() {
+            var msg = document.getElementById("message");
+            msg.innerHTML = "Button clicked successfully!";
+        }
+    </script>
+
+</body>
+</html>
