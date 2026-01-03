@@ -15,5 +15,10 @@ jobs:
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
+        with:
+          args: >
+            -Dsonar.projectKey=Cloud-Security-practise
+            -Dsonar.organization=rishicloud08
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
